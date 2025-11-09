@@ -1,0 +1,15 @@
+
+.container {
+     display: "flex", flexDirection "column", alignItems "center", marginTop 80 }
+
+
+.form {
+     display: "flex", flexDirection "column", gap 10, width 250 }
+
+
+.input {
+     padding: 8, borderRadius 4, border "1px solid #ccc" }
+
+
+.button { 
+    padding: 10, backgroundColor "#28a745", color "#fff", border "none", borderRadius 4 }
