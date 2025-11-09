@@ -1,8 +1,7 @@
-import { useState } from "react"
-import { Link } from "react-router-dom"
-import "../style/Login.css" 
-import "../assets/logo.png"
-
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "../style/Login.css";
+import logo from "../assets/logo.png"; 
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -19,7 +18,7 @@ export default function Login() {
       <div className="login-box">
         {/* Ícone ou logo */}
         <img
-          src="logo.png" 
+          src={logo} 
           alt="Logo"
           className="login-logo"
         />
@@ -49,6 +48,6 @@ export default function Login() {
           <Link to="/register" className="btn-cadastro">Cadastro</Link>
         </form>
       </div>
-    </div>
-  );
+    </div>
+  );
 }

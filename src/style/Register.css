@@ -1,15 +1,108 @@
+.cadastro-container {
+  background-color: #0F2A50; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.container {
-     display: "flex", flexDirection "column", alignItems "center", marginTop 80 }
+.cadastro-box {
+  background-color: #0f2a50;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 360px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.cadastro-box h2 {
+  color: #a6ff00;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+}
+
+.cadastro-form label {
+  font-size: 0.8rem;
+  color: #a6ff00;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.cadastro-form input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.cadastro-form input:focus {
+  box-shadow: 0 0 8px #a6ff00;
+}
 
 
-.form {
-     display: "flex", flexDirection "column", gap 10, width 250 }
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-cadastrar {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #000;
+  background-color: #a6ff00;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-cadastrar:hover {
+  background-color: #89d600;
+}
 
 
-.input {
-     padding: 8, borderRadius 4, border "1px solid #ccc" }
+p {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 0.85rem;
+  text-align: center;
+  width: 100%;
+}
+
+p a {
+  color: #a6ff00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
 
 
-.button { 
-    padding: 10, backgroundColor "#28a745", color "#fff", border "none", borderRadius 4 }
+@media (max-width: 480px) {
+  .cadastro-box {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .cadastro-box h2 {
+    font-size: 1.2rem;
+  }
+}

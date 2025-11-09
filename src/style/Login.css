@@ -1,13 +1,13 @@
-/* Fundo da tela */
+
 .login-container {
-  background-color: #08224c; /* azul escuro */
+  background-color: #08224c; 
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Caixa central */
+
 .login-box {
   display: flex;
   flex-direction: column;
@@ -16,14 +16,14 @@
   max-width: 350px;
 }
 
-/* Logo */
+
 .login-logo {
-  width: 120px;
-  height: 120px;
+  width: 360px;
+  height: 260px;
   margin-bottom: 20px;
 }
 
-/* Formulário */ 
+
 .login-form {
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@
   margin-left: 4px;
 }
 
-/* Campos */
+
 .login-form input {
   padding: 10px;
   border: none;
@@ -46,7 +46,7 @@
   background-color: #f1f1f1;
 }
 
-/* Botões */
+
 .btn-login,
 .btn-cadastro {
   margin-top: 8px;
@@ -55,7 +55,7 @@
   border-radius: 4px;
   font-weight: bold;
   color: #000;
-  background-color: #a6ff00; /* verde neon */
+  background-color: #a6ff00; 
   cursor: pointer;
   text-align: center;
   text-decoration: none;
