@@ -21,7 +21,7 @@ export default function Treinos() {
       </header>
 
       {/* Titulo */}
-      <h2 className="TituloTreinos">
+      <h2 className="TituloPag">
         Lista de Treinos
       </h2>
 
