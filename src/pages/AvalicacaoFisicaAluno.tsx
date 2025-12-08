@@ -61,17 +61,17 @@ export default function CardFicha() {
     <div>
 
           {/* Topo */}
-      <header className="Header">
-        <div className="HeaderPag">
-          <User size={26} />
-          <span>Olá, Jorge</span>
-        </div>
-        <Menu size={28} />
-      </header>
+        <header className="Header">
+            <div className="HeaderPag">
+            <User size={26} />
+            <span>Olá, Jorge</span>
+            </div>
+            <Menu size={28} />
+        </header>
 
       {/* Titulo */}
       <h2 className="TituloPag">
-        Lista de Treinos
+        Avaliação Fisica
       </h2>
 
 
