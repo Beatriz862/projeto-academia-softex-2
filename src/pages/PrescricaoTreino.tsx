@@ -80,18 +80,22 @@ export default function PrescricaoTreino() {
        {/* Menu inferior */}
       <nav className="footer">
         <button className="FtHome">
+          <link rel="stylesheet" href="src/pages/PrescricaoTreino.tsx" />
           <img src="/icons/home.png" className="LogoFooter" />
         </button>
 
         <button className="FtTreinos">
+          <link rel="stylesheet" href="" />
           <img src="" className="LogoFooter" />
         </button>
 
         <button className="FtRanking">
+          <link rel="stylesheet" href="" />
           <img src="" className="LogoFooter" />
         </button>
 
         <button className="FtProfile">
+          <link rel="stylesheet" href="" />
           <img src="" className="LogoFooter" />
         </button>
       </nav>

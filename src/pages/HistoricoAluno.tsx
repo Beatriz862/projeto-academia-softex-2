@@ -167,19 +167,24 @@ export default function WorkoutChart() {
 
       {/* Menu inferior */}
       <nav className="footer">
+        
         <button className="FtHome">
+          <link rel="stylesheet" href="/pages/DashboardAluno.tsx" />
           <img src="/icons/home.png" className="LogoFooter" />
         </button>
-
+        
         <button className="FtTreinos">
+          <link rel="stylesheet" href="/pages/LstTreinoAluno.tsx" />
           <img src="" className="LogoFooter" />
         </button>
-
+  
         <button className="FtRanking">
+          <link rel="stylesheet" href="" /> {/*link da gameficacao*/}
           <img src="" className="LogoFooter" />
         </button>
 
-        <button className="FtProfile">
+        <button className="FtAvaliacao">
+          <link rel="stylesheet" href="/pages/AvalicacaoFisicaAluno.tsx" />
           <img src="" className="LogoFooter" />
         </button>
       </nav>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Menu, User } from "lucide-react";
 
 export default function AvaliacaoFisicaProf() {
   const alunos = [
@@ -60,7 +61,19 @@ export default function AvaliacaoFisicaProf() {
   return (
     <div>
 
+       {/* Topo */}
+        <header className="Header">
+            <div className="HeaderPag">
+            <User size={26} />
+            <span>Olá, Jorge</span>
+            </div>
+            <Menu size={28} />
+        </header>
 
+      {/* Titulo */}
+      <h2 className="TituloPag">
+        Avaliação Fisica
+      </h2>
         
 
     
