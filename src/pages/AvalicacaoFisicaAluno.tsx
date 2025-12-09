@@ -61,17 +61,17 @@ export default function CardFicha() {
     <div>
 
           {/* Topo */}
-      <header className="Header">
-        <div className="HeaderPag">
-          <User size={26} />
-          <span>Olá, Jorge</span>
-        </div>
-        <Menu size={28} />
-      </header>
+        <header className="Header">
+            <div className="HeaderPag">
+            <User size={26} />
+            <span>Olá, Jorge</span>
+            </div>
+            <Menu size={28} />
+        </header>
 
       {/* Titulo */}
       <h2 className="TituloPag">
-        Lista de Treinos
+        Avaliação Fisica
       </h2>
 
 
@@ -162,21 +162,26 @@ export default function CardFicha() {
         </div>
 
 
-        {/* Menu inferior */}
+       {/* Menu inferior */}
       <nav className="footer">
+        
         <button className="FtHome">
+          <link rel="stylesheet" href="/pages/DashboardAluno.tsx" />
           <img src="/icons/home.png" className="LogoFooter" />
         </button>
-
+        
         <button className="FtTreinos">
+          <link rel="stylesheet" href="/pages/LstTreinoAluno.tsx" />
           <img src="" className="LogoFooter" />
         </button>
-
+  
         <button className="FtRanking">
+          <link rel="stylesheet" href="" /> {/*link da gameficacao*/}
           <img src="" className="LogoFooter" />
         </button>
 
-        <button className="FtProfile">
+        <button className="FtAvaliacao">
+          <link rel="stylesheet" href="/pages/AvalicacaoFisicaAluno.tsx" />
           <img src="" className="LogoFooter" />
         </button>
       </nav>
