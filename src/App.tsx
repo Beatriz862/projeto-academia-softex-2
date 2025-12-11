@@ -8,7 +8,9 @@ import TiposDeTreino from "./pages/TiposDeTreino"; {/* prof */}
 import Exercicios from "./pages/ExerciciosProf.tsx"; {/* prof */}
 import AvaliacaoFisicaProf from "./pages/AvaliacaoFisicaProf.tsx";{/* prof */}
 
-import AvalicaoFisicaAluno from "./pages/AvalicacaoFisicaAluno.tsx";
+import AvaliacaoFisicaAluno from "./pages/AvaliacaoFisicaAluno.tsx";
+import ExerciciosAluno from "./pages/Exercicios.tsx";
+import Treinos from "./pages/LstTreinoAluno";
 
 export default function App() {
   return (
@@ -19,10 +21,10 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         {/* aluno  */}
-        <Route path="/LstTreinoAluno" element={<LstTreinoAluno />} />
+        <Route path="/LstTreinoAluno" element={<Treinos />} />
         <Route path="DashboardAluno" element={<DashboardAluno />} />
-        <Route path="/exercicios" element={<Exercicios />} />
-        <Route path="/AvalicacaoFisicaAluno" element={<Exercicios />} />
+        <Route path="/exercicios" element={<ExerciciosAluno />} />
+        <Route path="/AvaliacacaoFisicaAluno" element={<AvaliacaoFisicaAluno />} />
 
         {/* prof */}
         <Route path="/PrescricaoTreino" element={<PrescricaoTreino />} />

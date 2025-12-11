@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 
-export default function Treinos() {
+export default function DashboardAluno() {
   return (
     <div className="Tela">
 
