@@ -50,7 +50,7 @@ export default function Login() {
           />
 
           <Link to="/DashboardAluno" className="btn-cadastro">Login</Link>
-          <Link to="/register" className="btn-cadastro">Cadastro</Link>
+          <Link to="/PrescricaoTreino" className="btn-cadastro">Cadastro</Link>
         </form>
       </div>
     </div>

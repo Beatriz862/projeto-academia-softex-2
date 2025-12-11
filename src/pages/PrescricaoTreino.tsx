@@ -79,23 +79,23 @@ export default function PrescricaoTreino() {
 
        {/* Menu inferior */}
       <nav className="footer">
-        <button className="FtHome">
-          <link rel="stylesheet" href="src/pages/PrescricaoTreino.tsx" />
+        <button className="FtHome" onClick={() => window.location.href = "/PrescricaoTreino"}>
+          
           <img src="/icons/home.png" className="LogoFooter" />
         </button>
 
-        <button className="FtTreinos">
-          <link rel="stylesheet" href="" />
+        <button className="FtTreinos" onClick={() => window.location.href = ""}>
+          
           <img src="" className="LogoFooter" />
         </button>
 
-        <button className="FtRanking">
-          <link rel="stylesheet" href="" />
+        <button className="FtRanking" onClick={() => window.location.href = ""}>
+          
           <img src="" className="LogoFooter" />
         </button>
 
-        <button className="FtProfile">
-          <link rel="stylesheet" href="" />
+        <button className="FtProfile" onClick={() => window.location.href = ""}>
+          
           <img src="" className="LogoFooter" />
         </button>
       </nav>

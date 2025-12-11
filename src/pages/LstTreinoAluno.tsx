@@ -25,7 +25,7 @@ const CardTreinoAluno = ({ titulo, professor, imagem }: CardTreinoAlunoProps) =>
         <p className="NomeProfessor">Prof. {professor}</p>
       </div>
 
-      <button className="btnIniciar" onClick={() => navigate("/TreinoDetalhes")}>
+      <button className="btnIniciar" onClick={() => window.location.href = "/Exercicios"}>
         Iniciar ▶
       </button>
     </div>
@@ -91,35 +91,23 @@ export default function Treinos() {
 
       {/* Menu inferior */}
       <nav className="footer">
-        <button
-          className="FtHome"
-          onClick={() => (window.location.href = "/DashboardAluno")}
-        >
+        
+        <button className="FtHome" onClick={() => window.location.href = "/DashboardAluno"}>
           <img src="/icons/home.png" className="LogoFooter" />
         </button>
-
-        <button
-          className="FtTreinos"
-          onClick={() => (window.location.href = "/LstTreinoAluno")}
-        >
-          <img src="/icons/treinos.png" className="LogoFooter" />
+        
+        <button className="FtTreinos" onClick={() => window.location.href = "/LstTreinoAluno"}>
+          <img src="" className="LogoFooter" />
+        </button>
+  
+        <button className="FtRanking" onClick={() => window.location.href = ""}> {/*link da gameficacao*/}
+          <img src="" className="LogoFooter" />
         </button>
 
-        <button
-          className="FtRanking"
-          onClick={() => (window.location.href = "/Ranking")}
-        >
-          <img src="/icons/ranking.png" className="LogoFooter" />
-        </button>
-
-        <button
-          className="FtAvaliacao"
-          onClick={() => (window.location.href = "/AvaliacaoFisica")}
-        >
-          <img src="/icons/avaliacao.png" className="LogoFooter" />
+        <button className="FtAvaliacao" onClick={() => window.location.href = "/AvalicacaoFisicaAluno"}>
+          <img src="" className="LogoFooter" />
         </button>
       </nav>
-
     </div>
   );
 }

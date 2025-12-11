@@ -24,19 +24,23 @@ export default function TiposDeTreino() {
 
        {/* Menu inferior */}
       <nav className="footer">
-        <button className="FtHome">
+        <button className="FtHome" onClick={() => window.location.href = "/PrescricaoTreino"}>
+          
           <img src="/icons/home.png" className="LogoFooter" />
         </button>
 
-        <button className="FtTreinos">
+        <button className="FtTreinos" onClick={() => window.location.href = ""}>
+          
           <img src="" className="LogoFooter" />
         </button>
 
-        <button className="FtRanking">
+        <button className="FtRanking" onClick={() => window.location.href = ""}>
+          
           <img src="" className="LogoFooter" />
         </button>
 
-        <button className="FtProfile">
+        <button className="FtProfile" onClick={() => window.location.href = ""}>
+          
           <img src="" className="LogoFooter" />
         </button>
       </nav>
