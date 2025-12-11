@@ -1,0 +1,160 @@
+/* ======== Tela Geral ======== */
+.Tela {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e7e9ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+  padding-bottom: 90px; /* espaço para o footer fixo */
+}
+
+/* ======== HEADER ======== */
+.Header {
+  width: 100%;
+  height: 65px;
+  background: #0c2a55;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  box-sizing: border-box;
+
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.HeaderPag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.HeaderPag span {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ======== CONTEÚDO CENTRAL ======== */
+.ParteCentral {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 18px;
+  gap: 22px;
+}
+
+/* ======== PAINEL DO DASHBOARD (circular + texto) ======== */
+.PainelDashboard {
+  width: 92%;
+  max-width: 720px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: linear-gradient(180deg, rgba(12,42,85,0.95), rgba(10,36,70,0.92));
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  justify-content: flex-start;
+}
+
+.PainelTextos h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+.PainelTextos p {
+  margin: 6px 0 0;
+  color: #cfe8b2;
+}
+
+/* ======== AREA DOS BOTOES (centralizados) ======== */
+.BotoesWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* ======== BOTÕES DO DASHBOARD ======== */
+.BotaoDashboard {
+  width: 80%;
+  max-width: 520px;
+  background: #0c2a55;
+  border-radius: 12px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-left: 18px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  transition: transform .18s ease;
+  border: 2px solid transparent;
+}
+
+.BotaoDashboard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(167,232,0,0.25);
+}
+
+.IconeDashboard {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: none;
+  margin-left: -6px;
+}
+
+.TextoDashboard {
+  color: #A7E800;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ======== RODAPÉ ======== */
+.footer {
+  width: 100%;
+  height: 65px;
+  background-color: #0c2a55;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer button {
+  background: none;
+  border: none;
+}
+
+.LogoFooter {
+  width: 32px;
+  height: 32px;
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 480px) {
+  .BotaoDashboard { width: 92%; height: 62px; }
+  .TextoDashboard { font-size: 18px; }
+  .IconeDashboard { width: 30px; height: 30px; }
+  .PainelDashboard { padding: 12px; }
+  .PainelTextos h3 { font-size: 16px; }
+}
+@media (min-width: 768px) {
+  .BotaoDashboard { width: 60%; height: 78px; }
+  .IconeDashboard { width: 42px; height: 42px; }
+  .TextoDashboard { font-size: 22px; }
+  .PainelDashboard { justify-content: flex-start; }
+}

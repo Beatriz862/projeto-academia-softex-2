@@ -1,0 +1,62 @@
+.page-container {
+  background: #f4f4f4;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.header .icons {
+  display: flex;
+  gap: 15px;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-treino {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.card-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-info p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+.card-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.circular-chart-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
