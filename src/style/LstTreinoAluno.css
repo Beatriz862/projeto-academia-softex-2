@@ -1,62 +1,137 @@
-.page-container {
-  background: #f4f4f4;
+/* ======== Estrutura Geral ======== */
+
+.Tela {
+  font-family: "Inter", sans-serif;
+  background: #f5f7fa;
   min-height: 100vh;
-  padding: 20px;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 25px;
-}
-
-.header .icons {
-  display: flex;
-  gap: 15px;
-}
-
-.section-title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.cards-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
-.card-treino {
-  background: #fff;
-  padding: 15px;
-  border-radius: 12px;
+/* ======== Cabeçalho ======== */
+
+.Header {
+  background: #08224c;
+  color: white;
+  padding: 16px 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
 }
 
-.card-info h3 {
-  margin: 0;
-  font-size: 1.2rem;
+.HeaderPag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
-.card-info p {
-  margin: 5px 0 0;
-  color: #555;
+/* ======== Título ======== */
+
+.TituloTreinos {
+  margin: 22px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #08224c;
 }
 
-.card-img {
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
+/* ======== Cards ======== */
+
+.ListaDeTreinos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 20px 90px; /* espaço por causa do rodapé */
+}
+
+.CardTreino {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.CardTreino:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.12);
+}
+
+.ImagemMusculos {
+  width: 78px;
+  height: 78px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-.circular-chart-container {
-  margin-top: 30px;
+.CardTextos {
+  flex: 1;
+  margin-left: 14px;
+}
+
+.NomeExercicio {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #08224c;
+}
+
+.NomeProfessor {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  color: #3b4c63;
+}
+
+/* ======== Botão do Card ======== */
+
+.btnIniciar {
+  background: #7fd000;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btnIniciar:hover {
+  background: #70ba00;
+}
+
+/* ======== Rodapé ======== */
+
+.footer {
+  background: #08224c;
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #051a3a;
+}
+
+.footer button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
+}
+
+.LogoFooter {
+  width: 28px;
+  height: 28px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer button:hover .LogoFooter {
+  opacity: 1;
+  transform: scale(1.12);
 }

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../style/Login.css";
 import logo from "../assets/logo.png"; 
 
+
+
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -11,7 +13,10 @@ export default function Login() {
     e.preventDefault();
     console.log("Login:", { email, password });
     alert("Login efetuado!");
-  };
+  }
+  
+
+  ;
 
   return (
     <div className="login-container">
@@ -44,8 +49,8 @@ export default function Login() {
             required
           />
 
-          <button type="submit" className="btn-login">Login</button>
-          <Link to="/register" className="btn-cadastro">Cadastro</Link>
+          <Link to="/DashboardAluno" className="btn-cadastro">Login</Link>
+          <Link to="/PrescricaoTreino" className="btn-cadastro">Cadastro</Link>
         </form>
       </div>
     </div>
