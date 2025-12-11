@@ -10,7 +10,9 @@ export default function DashboardAluno() {
         <span className="NumeroDashboard">1</span>
       </h2>
 
-      <header className="Topo NovoTopo">
+export default function DashboardAluno() {
+  return (
+    <div className="Tela">
 
         {/* LOGO */}
         <img src="Logo.png" alt="logo" className="LogoTopo" />
