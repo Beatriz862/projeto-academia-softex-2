@@ -1,14 +1,13 @@
 import "../style/Login.css";
 import { Menu, User } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import "../style/LstTreinoAluno.css";
 
 interface CardTreinoAlunoProps {
   titulo: string;
   professor: string;
   imagem: string;
 }
-
-
 
 const CardTreinoAluno = ({ titulo, professor, imagem }: CardTreinoAlunoProps) => {
   const navigate = useNavigate();
@@ -33,8 +32,6 @@ const CardTreinoAluno = ({ titulo, professor, imagem }: CardTreinoAlunoProps) =>
   );
 };
 
-
-
 export default function Treinos() {
   return (
     <div className="Tela">
@@ -48,10 +45,8 @@ export default function Treinos() {
         <Menu size={28} />
       </header>
 
-      {/* Titulo */}
-      <h2 className="TituloTreinos">
-        Lista de Treinos
-      </h2>
+      {/* Título */}
+      <h2 className="TituloTreinos">Lista de Treinos</h2>
 
       {/* Lista de treinos */}
       <div className="ListaDeTreinos">
@@ -59,9 +54,38 @@ export default function Treinos() {
         <CardTreinoAluno
           titulo="Peito e Bíceps"
           professor="Paulo Pascal"
-          imagem=""
+          imagem="/imagens/peito.jpg"
         />
 
+        <CardTreinoAluno
+          titulo="Costas e Tríceps"
+          professor="Juliana Castro"
+          imagem="/imagens/costas.jpg"
+        />
+
+        <CardTreinoAluno
+          titulo="Pernas"
+          professor="Marcos Ventura"
+          imagem="/imagens/pernas.jpg"
+        />
+
+        <CardTreinoAluno
+          titulo="Ombros"
+          professor="Amanda Dias"
+          imagem="/imagens/ombros.jpg"
+        />
+
+        <CardTreinoAluno
+          titulo="HIIT"
+          professor="Roberto Maia"
+          imagem="/imagens/hiit.jpg"
+        />
+
+        <CardTreinoAluno
+          titulo="Abdômen"
+          professor="Clara Nogueira"
+          imagem="/imagens/abs.jpg"
+        />
 
       </div>
 
