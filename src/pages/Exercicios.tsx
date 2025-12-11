@@ -1,7 +1,7 @@
 import "../style/Login.css";
 import { Menu, User } from "lucide-react";
 import CardsExercicios from "../components/CardsExercicios";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 
 
@@ -41,26 +41,22 @@ export default function Treinos() {
         />
       </div>
 
-     {/* Menu inferior */}
+    {/* Menu inferior */}
       <nav className="footer">
         
-        <button className="FtHome">
-          <link rel="stylesheet" href="/pages/DashboardAluno.tsx" />
+        <button className="FtHome" onClick={() => window.location.href = "/DashboardAluno"}>
           <img src="/icons/home.png" className="LogoFooter" />
         </button>
         
-        <button className="FtTreinos">
-          <link rel="stylesheet" href="/pages/LstTreinoAluno.tsx" />
+        <button className="FtTreinos" onClick={() => window.location.href = "/LstTreinoAluno"}>
           <img src="" className="LogoFooter" />
         </button>
   
-        <button className="FtRanking">
-          <link rel="stylesheet" href="" /> {/*link da gameficacao*/}
+        <button className="FtRanking" onClick={() => window.location.href = ""}> {/*link da gameficacao*/}
           <img src="" className="LogoFooter" />
         </button>
 
-        <button className="FtAvaliacao">
-          <link rel="stylesheet" href="/pages/AvalicacaoFisicaAluno.tsx" />
+        <button className="FtAvaliacao" onClick={() => window.location.href = "/AvalicacaoFisicaAluno"}>
           <img src="" className="LogoFooter" />
         </button>
       </nav>
