@@ -50,7 +50,7 @@ export default function Login() {
           />
 
           <Link to="/DashboardAluno" className="btn-cadastro">Login</Link>
-          <Link to="" className="btn-cadastro">Esqueceu a senha?</Link>
+          <Link to="" >Esqueceu a senha?</Link>
           <button onClick={() => window.location.href = "/LoginProfessor"} >Professor</button>
         </form>
       </div>
