@@ -1,12 +1,13 @@
-import "../style/Login.css";
 import { Menu, User } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import "../style/LstTreinoAluno.css";
+import CircularChart from "../components/CircularChart.tsx";
+
 
 interface CardTreinoAlunoProps {
   titulo: string;
   professor: string;
-  imagem: string;
+  imagem?: string;
 }
 
 const CardTreinoAluno = ({ titulo, professor, imagem }: CardTreinoAlunoProps) => {
@@ -15,7 +16,7 @@ const CardTreinoAluno = ({ titulo, professor, imagem }: CardTreinoAlunoProps) =>
   return (
     <div className="CardTreino">
       <img
-        src={imagem}
+        src={imagem ?? "/icons/default-musculo.png"}
         alt={titulo}
         className="ImagemMusculos"
       />
@@ -25,6 +26,10 @@ const CardTreinoAluno = ({ titulo, professor, imagem }: CardTreinoAlunoProps) =>
         <p className="NomeProfessor">Prof. {professor}</p>
       </div>
 
+      <button
+        className="btnIniciar"
+        onClick={() => navigate("/TreinoDetalhes")}
+      >
       <button className="btnIniciar" onClick={() => window.location.href = "/Exercicios"}>
         Iniciar ▶
       </button>
@@ -32,6 +37,34 @@ const CardTreinoAluno = ({ titulo, professor, imagem }: CardTreinoAlunoProps) =>
   );
 };
 
+export default function LstTreinoAluno() {
+  return (
+    <div className="Tela">
+
+      {/* Cabeçalho */}
+      <header className="Header">
+        <div className="HeaderPag">
+          <User size={26} color="#fff" />
+          <span>Olá, Jorge</span>
+        </div>
+        <Menu size={28} color="#fff" />
+      </header>
+
+      {/* Dashboard Circular */}
+      <div className="DashboardCircular">
+        <CircularChart value={75} />
+        <p className="TextoDash">Desempenho semanal</p>
+      </div>
+
+      {/* Título */}
+      <h2 className="TituloTreinos">Lista de Treinos</h2>
+
+      {/* Lista */}
+      <div className="ListaDeTreinos">
+        <CardTreinoAluno
+          titulo="Peito e Bíceps"
+          professor="Paulo Pascal"
+          imagem="/icons/default-musculo.png"
 export default function Treinos() {
   return (
     <div className="Tela">

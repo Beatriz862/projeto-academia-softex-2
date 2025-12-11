@@ -1,62 +1,52 @@
-import "../style/Login.css";
-import { Menu, User } from "lucide-react";
-import { Link } from "react-router-dom";
+import CircularChart from "../components/CircularChart";
+import "../style/DashboardAluno.css";
 
-
-
-export default function Treinos() {
+export default function DashboardAluno() {
   return (
-    <div className="Tela">
+    <div className="TelaDashboard">
 
-      {/* Topo */}
-      <header className="Header">
-        <div className="HeaderPag">
-          <User size={26} />
-          <span>Olá, Jorge</span>
-        </div>
-        <Menu size={28} />
+      <h2 className="TituloDashboard">
+        Página Inicial
+        <span className="NumeroDashboard">1</span>
+      </h2>
+
+      <header className="Topo NovoTopo">
+
+        {/* LOGO */}
+        <img src="Logo.png" alt="logo" className="LogoTopo" />
+
+        {/* TEXTO CENTRALIZADO */}
+        <span className="OlaUsuario">Oi, Gleyde</span>
+
+        {/* BOTÃO MENU */}
+        <img src="/menu.png" alt="menu" className="MenuTopo" />
+
       </header>
 
+      {/* CONTEÚDO */}
+      <div className="ConteudoDashboard">
 
-    
+        <div className="GraficoContainer">
+          <CircularChart value={65} />
+        </div>
 
-      <div className="BotãoDashboard">
-        <img src="" alt="" className="LogoExercicioDB"/>
-        {/* <h2 className="TextosBtnDB">Lista de exercicios</h2> */}
-        <Link to="/LstTreinoAluno" className="btn-cadastro">Lista de Exercicio</Link>
+        <div className="BotoesContainer">
+          <button className="BotaoPrincipal">📝 Lista de Exercício</button>
+          <button className="BotaoPrincipal">📚 Histórico do Aluno</button>
+          <button className="BotaoPrincipal">🏆 Ranking</button>
+        </div>
 
       </div>
 
-       <div className="BotãoDashboard">
-        <img src="" alt="" className="LogoExercicioDB"/>
-        <h2 className="TextosBtnDB">Historico do aluno</h2>
-      </div>
-
-       <div className="BotãoDashboard">
-        <img src="" alt="" className="LogoExercicioDB"/>
-        <h2 className="TextosBtnDB">Ranking</h2>
-      </div>
-
-
-      {/* Menu inferior */}
-      <nav className="footer">
-        
-        <button className="FtHome" onClick={() => window.location.href = "/DashboardAluno"}>
-          <img src="/icons/home.png" className="LogoFooter" />
-        </button>
-        
-        <button className="FtTreinos" onClick={() => window.location.href = "/LstTreinoAluno"}>
-          <img src="" className="LogoFooter" />
-        </button>
-  
-        <button className="FtRanking" onClick={() => window.location.href = ""}> {/*link da gameficacao*/}
-          <img src="" className="LogoFooter" />
-        </button>
-
-        <button className="FtAvaliacao" onClick={() => window.location.href = "/AvalicacaoFisicaAluno"}>
-          <img src="" className="LogoFooter" />
-        </button>
+      {/* RODAPÉ */}
+      <nav className="MenuInferior">
+        <button className="BotaoPrincipal">📝 </button>
+        <button className="BotaoPrincipal">📚 </button>
+        <button className="BotaoPrincipal">🧭</button>
+        <button className="BotaoPrincipal">🏆 </button>
+        <button className="BotaoPrincipal">👤 </button>
       </nav>
+
     </div>
   );
 }
