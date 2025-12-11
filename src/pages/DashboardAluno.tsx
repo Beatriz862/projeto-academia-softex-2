@@ -3,17 +3,17 @@ import "../style/DashboardAluno.css";
 
 export default function DashboardAluno() {
   return (
+    
     <div className="TelaDashboard">
 
       <h2 className="TituloDashboard">
         Página Inicial
-        <span className="NumeroDashboard">1</span>
       </h2>
 
-export default function DashboardAluno() {
-  return (
-    <div className="Tela">
 
+
+    {/* <div className="Tela"> */}
+        <header>
         {/* LOGO */}
         <img src="Logo.png" alt="logo" className="LogoTopo" />
 
@@ -42,9 +42,9 @@ export default function DashboardAluno() {
 
       {/* RODAPÉ */}
       <nav className="MenuInferior">
-        <button className="BotaoPrincipal">📝 </button>
-        <button className="BotaoPrincipal">📚 </button>
-        <button className="BotaoPrincipal">🧭</button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/LstTreinoAluno"} >📝 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/AvaliacacaoFisicaAluno"}>📚 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/DashboardAluno"}>🧭</button>
         <button className="BotaoPrincipal">🏆 </button>
         <button className="BotaoPrincipal">👤 </button>
       </nav>

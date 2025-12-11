@@ -119,7 +119,7 @@ export default function AvaliacaoFisicaAluno() {
                 <p>Panturrilha Esquerda: {perimetros.panturrilhaEsq}</p>
             
             </div>
-           
+  
 
         </div >
          {/* FIM card perimetros */}
@@ -162,24 +162,13 @@ export default function AvaliacaoFisicaAluno() {
         </div>
 
 
-       {/* Menu inferior */}
-      <nav className="footer">
-        
-        <button className="FtHome" onClick={() => window.location.href = "/DashboardAluno"}>
-          <img src="/icons/home.png" className="LogoFooter" />
-        </button>
-        
-        <button className="FtTreinos" onClick={() => window.location.href = "/LstTreinoAluno"}>
-          <img src="" className="LogoFooter" />
-        </button>
-  
-        <button className="FtRanking" onClick={() => window.location.href = ""}> {/*link da gameficacao*/}
-          <img src="" className="LogoFooter" />
-        </button>
-
-        <button className="FtAvaliacao" onClick={() => window.location.href = "/AvalicacaoFisicaAluno"}>
-          <img src="" className="LogoFooter" />
-        </button>
+        {/* RODAPÉ */}
+      <nav className="MenuInferior">
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/LstTreinoAluno"} >📝 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/AvaliacacaoFisicaAluno"}>📚 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/DashboardAluno"}>🧭</button>
+        <button className="BotaoPrincipal">🏆 </button>
+        <button className="BotaoPrincipal">👤 </button>
       </nav>
 
       
@@ -187,7 +176,6 @@ export default function AvaliacaoFisicaAluno() {
 
         
 
-   
 
 
 

@@ -77,28 +77,16 @@ export default function PrescricaoTreino() {
       ))}
 
 
-       {/* Menu inferior */}
-      <nav className="footer">
-        <button className="FtHome" onClick={() => window.location.href = "/PrescricaoTreino"}>
-          
-          <img src="/icons/home.png" className="LogoFooter" />
-        </button>
 
-        <button className="FtTreinos" onClick={() => window.location.href = ""}>
-          
-          <img src="" className="LogoFooter" />
-        </button>
-
-        <button className="FtRanking" onClick={() => window.location.href = ""}>
-          
-          <img src="" className="LogoFooter" />
-        </button>
-
-        <button className="FtProfile" onClick={() => window.location.href = ""}>
-          
-          <img src="" className="LogoFooter" />
-        </button>
+        {/* RODAPÉ */}
+      <nav className="MenuInferior">
+        <button className="BotaoPrincipal" onClick={() => window.location.href = ""} >📝 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/AvalicacaoFisicaAluno"}>📚 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = ""}>🧭</button>
+        <button className="BotaoPrincipal">🏆 </button>
+        <button className="BotaoPrincipal">👤 </button>
       </nav>
+      
 
     </div>
   );

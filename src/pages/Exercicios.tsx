@@ -29,23 +29,13 @@ export default function Treinos() {
         />
       </div>
 
-      {/* Menu inferior */}
-      <nav className="footer">
-        <button className="FtHome">
-          <img src="/icons/home.png" className="LogoFooter" />
-        </button>
-
-        <button className="FtTreinos">
-          <img src="/icons/treinos.png" className="LogoFooter" />
-        </button>
-
-        <button className="FtRanking">
-          <img src="/icons/ranking.png" className="LogoFooter" />
-        </button>
-
-        <button className="FtProfile">
-          <img src="/icons/user.png" className="LogoFooter" />
-        </button>
+        {/* RODAPÉ */}
+      <nav className="MenuInferior">
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/LstTreinoAluno"} >📝 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/AvaliacacaoFisicaAluno"}>📚 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/DashboardAluno"}>🧭</button>
+        <button className="BotaoPrincipal">🏆 </button>
+        <button className="BotaoPrincipal">👤 </button>
       </nav>
     </div>
   );

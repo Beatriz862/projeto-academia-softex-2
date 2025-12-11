@@ -1,6 +1,6 @@
 import "../style/Exercicios.css";
 
-interface Props {
+
 import "../style/Login.css";
 
 
@@ -14,7 +14,7 @@ interface CardTreinoProps {
   peso: string;
 }
 
-export default function CardsExercicios({ titulo, serie, repeticoes, peso }: Props) {
+export default function CardsExercicios({ titulo, serie, repeticoes, peso }: CardTreinoProps ) {
   return (
     <div className="CardExercicio">
       <div className="TextoExercicio">
@@ -50,5 +50,3 @@ const CardTreino = ({ titulo, serie, repeticoes, peso }: CardTreinoProps) => {
     </div>
   );
 };
-
-export default CardTreino;

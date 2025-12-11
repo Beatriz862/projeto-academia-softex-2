@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import "../style/LstTreinoAluno.css";
 import CircularChart from "../components/CircularChart.tsx";
 
-
 interface CardTreinoAlunoProps {
   titulo: string;
   professor: string;
@@ -28,9 +27,8 @@ const CardTreinoAluno = ({ titulo, professor, imagem }: CardTreinoAlunoProps) =>
 
       <button
         className="btnIniciar"
-        onClick={() => navigate("/TreinoDetalhes")}
+        onClick={() => navigate("/Exercicios")}
       >
-      <button className="btnIniciar" onClick={() => window.location.href = "/Exercicios"}>
         Iniciar ▶
       </button>
     </div>
@@ -65,29 +63,6 @@ export default function LstTreinoAluno() {
           titulo="Peito e Bíceps"
           professor="Paulo Pascal"
           imagem="/icons/default-musculo.png"
-export default function Treinos() {
-  return (
-    <div className="Tela">
-
-      {/* Topo */}
-      <header className="Header">
-        <div className="HeaderPag">
-          <User size={26} />
-          <span>Olá, Jorge</span>
-        </div>
-        <Menu size={28} />
-      </header>
-
-      {/* Título */}
-      <h2 className="TituloTreinos">Lista de Treinos</h2>
-
-      {/* Lista de treinos */}
-      <div className="ListaDeTreinos">
-
-        <CardTreinoAluno
-          titulo="Peito e Bíceps"
-          professor="Paulo Pascal"
-          imagem="/imagens/peito.jpg"
         />
 
         <CardTreinoAluno
@@ -119,27 +94,15 @@ export default function Treinos() {
           professor="Clara Nogueira"
           imagem="/imagens/abs.jpg"
         />
-
       </div>
 
-      {/* Menu inferior */}
-      <nav className="footer">
-        
-        <button className="FtHome" onClick={() => window.location.href = "/DashboardAluno"}>
-          <img src="/icons/home.png" className="LogoFooter" />
-        </button>
-        
-        <button className="FtTreinos" onClick={() => window.location.href = "/LstTreinoAluno"}>
-          <img src="" className="LogoFooter" />
-        </button>
-  
-        <button className="FtRanking" onClick={() => window.location.href = ""}> {/*link da gameficacao*/}
-          <img src="" className="LogoFooter" />
-        </button>
-
-        <button className="FtAvaliacao" onClick={() => window.location.href = "/AvalicacaoFisicaAluno"}>
-          <img src="" className="LogoFooter" />
-        </button>
+        {/* RODAPÉ */}
+      <nav className="MenuInferior">
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/LstTreinoAluno"} >📝 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/AvaliacacaoFisicaAluno"}>📚 </button>
+        <button className="BotaoPrincipal" onClick={() => window.location.href = "/DashboardAluno"}>🧭</button>
+        <button className="BotaoPrincipal">🏆 </button>
+        <button className="BotaoPrincipal">👤 </button>
       </nav>
     </div>
   );
