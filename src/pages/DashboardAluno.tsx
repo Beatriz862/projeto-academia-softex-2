@@ -33,8 +33,8 @@ export default function DashboardAluno() {
         </div>
 
         <div className="BotoesContainer">
-          <button className="BotaoPrincipal">📝 Lista de Exercício</button>
-          <button className="BotaoPrincipal">📚 Histórico do Aluno</button>
+          <button className="BotaoPrincipal" onClick={() => window.location.href = "/LstTreinoAluno"} >📝 Lista de Exercício</button>
+          <button className="BotaoPrincipal" onClick={() => window.location.href = "/AvaliacacaoFisicaAluno"} >📚 Histórico do Aluno</button>
           <button className="BotaoPrincipal">🏆 Ranking</button>
         </div>
 

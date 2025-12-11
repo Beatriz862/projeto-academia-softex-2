@@ -6,12 +6,12 @@ import logo from "../assets/logo.png";
 
 
 export default function Login() {
-  const [email, setEmail] = useState("");
+  const [CREF, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Login:", { email, password });
+    console.log("Login:", { CREF, password });
     alert("Login efetuado!");
   }
   
@@ -27,14 +27,14 @@ export default function Login() {
           alt="Logo"
           className="login-logo"
         />
-        <h2>Aluno</h2>
+        <h2>Professor</h2>
         <form onSubmit={handleLogin} className="login-form">
           <label htmlFor="email">Login</label>
           <input
             id="email"
             type="email"
-            placeholder="Digite seu e-mail"
-            value={email}
+            placeholder="Digite seu CREF"
+            value={CREF}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
@@ -49,9 +49,9 @@ export default function Login() {
             required
           />
 
-          <Link to="/DashboardAluno" className="btn-cadastro">Login</Link>
-          <Link to="" className="btn-cadastro">Esqueceu a senha?</Link>
-          <button onClick={() => window.location.href = "/LoginProfessor"} >Professor</button>
+          <Link to="/PrescricaoTreino" className="btn-cadastro">Login</Link>
+          <Link to="" >Esqueceu a senha?</Link>
+          <button onClick={() => window.location.href = "/Login"} >Professor</button>
         </form>
       </div>
     </div>
