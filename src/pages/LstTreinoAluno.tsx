@@ -26,7 +26,7 @@ const CardTreinoAluno = ({ titulo, professor, imagem }: CardTreinoAlunoProps) =>
         <p className="NomeProfessor">Prof. {professor}</p>
       </div>
 
-      <button className="btnIniciar" onClick={() => navigate("/TreinoDetalhes")}>
+      <button className="btnIniciar" onClick={() => window.location.href = "/Exercicios"}>
         Iniciar ▶
       </button>
     </div>

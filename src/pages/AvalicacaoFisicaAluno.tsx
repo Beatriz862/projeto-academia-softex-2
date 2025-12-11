@@ -2,7 +2,7 @@ import { Menu, User } from "lucide-react";
 
 
 
-export default function CardFicha() {
+export default function AvaliacaoFisicaAluno() {
   const ficha = {
     sexo: "M",
     idade: 30,

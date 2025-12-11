@@ -7,7 +7,7 @@ import CardsExercicios from "../components/CardsExercicios";
 
 
 
-export default function Treinos() {
+export default function ExerciciosAluno () {
   return (
     <div className="Tela">
 
