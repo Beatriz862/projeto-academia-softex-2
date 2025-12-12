@@ -1,4 +1,5 @@
 import { Menu, User } from "lucide-react";
+import "../style/AvaliacaoFisicaAluno.css";
 
 
 
