@@ -1,0 +1,104 @@
+/* ======== Estilos Globais ======== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: #f5f7fa;
+  color: #000000; /* Letras pretas */
+}
+
+/* ======== Cabeçalho ======== */
+.Header {
+  background: #08224c;
+  color: white; /* Mantém branco no cabeçalho */
+  padding: 16px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.HeaderPag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ======== Título da Página ======== */
+.TituloPag {
+  margin: 20px;
+  font-size: 24px;
+  color: #000000; /* Letras pretas */
+}
+
+/* ======== Cards de Histórico ======== */
+.cardHistorico {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: #000000; /* Letras pretas */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardHistorico h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000000; /* Letras pretas */
+}
+
+/* Se houver colunas dentro do card */
+.cardHistorico .lado-esquerdo,
+.cardHistorico .lado-direito {
+  flex: 1;
+  min-width: 150px;
+}
+
+.divisor {
+  width: 2px;
+  background-color: #d1d5db;
+  border-radius: 2px;
+  margin: 0 10px;
+}
+
+/* Linha de histórico individual */
+.historicoLinha {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.historicoLinha:last-child {
+  border-bottom: none;
+}
+
+/* ======== Rodapé ======== */
+.MenuInferior {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+.BotaoPrincipal {
+  background: #08224c;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.BotaoPrincipal:hover {
+  background: #0a2a6a;
+}
