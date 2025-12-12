@@ -1,0 +1,114 @@
+/* ======== Estilos Globais ======== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: #f5f7fa;
+  color: #000000; /* Letras pretas */
+}
+
+/* ======== Cabeçalho ======== */
+.Header {
+  background: #08224c;
+  color: white; /* Mantém branco no cabeçalho */
+  padding: 16px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.HeaderPag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ======== Título da Página ======== */
+.TituloPag {
+  margin: 20px;
+  font-size: 24px;
+  color: #000000; /* Letras pretas */
+}
+
+/* ======== Card Dados do Aluno ======== */
+.cardDadosAluno, 
+.cardPerimetrosAluno,
+.cardDobrasCultaneas,
+.cardBioImpedancia {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  color: #000000; /* Letras pretas */
+}
+
+.lado-esquerdo, .lado-direito, .ladoEsquerdo, .ladoDireito {
+  flex: 1;
+  min-width: 150px;
+}
+
+.divisor {
+  width: 2px;
+  background-color: #d1d5db;
+  border-radius: 2px;
+  margin: 0 10px;
+}
+
+/* ======== Títulos internos dos cards ======== */
+.cardPerimetrosAluno h1,
+.cardDobrasCultaneas h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000000; /* Letras pretas */
+}
+
+/* ======== Card Dobras Cultaneas ======== */
+.cardDobrasCultaneas {
+  display: flex;
+  gap: 20px;
+}
+
+.cardDobrasCultaneas .ladoEsquerdo,
+.cardDobrasCultaneas .ladoDireito {
+  flex: 1;
+}
+
+/* ======== Card Bio Impedancia ======== */
+.cardBioImpedancia {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ======== Rodapé ======== */
+.MenuInferior {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+.BotaoPrincipal {
+  background: #08224c;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.BotaoPrincipal:hover {
+  background: #0a2a6a;
+}
